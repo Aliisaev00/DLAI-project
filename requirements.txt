@@ -1,0 +1,19 @@
+# Core libraries
+numpy==1.26.4          # NumPy < 2 avoids binary-compat issues
+scipy==1.12.0
+matplotlib==3.8.4
+
+# Machine-learning stack
+scikit-learn==1.3.2
+umap-learn==0.5.5
+
+# PyTorch (CPU build) – replace with +cu118 for GPU
+torch==2.2.0
+torchvision==0.17.0
+# If GPU is available and you prefer CUDA 11.8, uncomment:
+# torch==2.2.0+cu118      --find-links https://download.pytorch.org/whl/cu118
+# torchvision==0.17.0+cu118
+
+# Jupyter / notebook utilities (optional but convenient)
+ipykernel>=6.29
+tqdm>=4.66
